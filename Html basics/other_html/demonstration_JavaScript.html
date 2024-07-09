@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemonStrate_JavaScript</title>
+    <style>
+        .myContainer{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            justify-content: space-evenly;
+        }
+        .container{
+            padding: 24px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" class="myContainer">
+        <div class="container" style="background-color: fuchsia;">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aut?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, deleniti.</p>
+        </div>
+        <div class="container" style="background-color: chartreuse;">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aut?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, deleniti.</p>
+        </div>
+        <div class="container" style="background-color: khaki;">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aut?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, deleniti.</p>
+        </div>
+    </div>
+    <button type="button" onclick="myName()">Click Here!</button>
+    <script>
+        function myName() {
+            document.getElementById("demo").innerHTML="Welcome To Greate JavaScript."
+        }
+    </script>
+</body>
+</html>
