@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light_turnOn and Light_turnOff</title>
+</head>
+<body>
+    <script>
+        function myLight(sw) {
+            var pic;
+            if (sw==0) {
+                pic = "./pic_bulboff.gif"
+            } else {
+                pic ="./pic_bulbon.gif"
+            }
+            document.getElementById("myImage").src=pic
+        }
+    </script>
+    <img src="./pic_bulboff.gif" alt="" id="myImage">
+    <p>
+        <button type="button" onclick="myLight(0)">Light_turnOff</button>
+        <button type="button"onclick="myLight(1)">Light_turnOn</button>
+    </p>
+</body>
+</html>
